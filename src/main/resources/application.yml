@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/app
+    username: app
+    password: app
+    hikari:
+      maximum-pool-size: 2
+      minimum-idle: 0
+      connection-timeout: 75000
+      read-only: true
+      register-mbeans: true
+      pool-name: app_db
